@@ -1,16 +1,10 @@
 {
   "permissions": {
     "allow": [
-      "mcp__winget-mcp__find-winget-packages",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" status)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" diff)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" log --oneline -5)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" add README.md ExampleClaudeConfig/settings.local.json)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" commit -m \"$\\(cat <<''EOF''\nAdd settings.local.json appendix and markdown edit permissions\n\nAdd Appendix A to README documenting how to install settings.local.json\nto reduce Claude Code prompting. Update the example config to allow\nediting markdown files without confirmation.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" push)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" commit -m \"$\\(cat <<''EOF''\nRemove Edit permissions from example settings\n\nRevert settings.local.json to only allow Bash commands, removing\nthe markdown file edit permissions for a more conservative default.\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" add .claude/ AGENTS.md ConfigureWindowsforAINotes.md openspec/)",
-      "Bash(git -C \"C:\\\\temp\\\\ConfigureWindowsforAI\" commit -m \"$\\(cat <<''EOF''\nAdd Claude config, AGENTS.md, notes, and OpenSpec files\n\nAdd project configuration and documentation files:\n- .claude/ - Claude Code local configuration\n- AGENTS.md - AI assistant instructions\n- ConfigureWindowsforAINotes.md - Project notes\n- openspec/ - OpenSpec project files\n\nCo-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>\nEOF\n\\)\")"
-    ]
+      "Bash(*)",
+      "Edit(**/*.md)"
+    ],
+    "deny": [],
+    "ask": []
   }
 }
