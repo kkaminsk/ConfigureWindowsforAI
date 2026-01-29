@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(*)",
+      "Edit(*.md)",
+      "Edit(**/*.md)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
