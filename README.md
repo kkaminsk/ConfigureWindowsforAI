@@ -256,9 +256,7 @@ The provided `settings.local.json` contains:
 {
   "permissions": {
     "allow": [
-      "Bash(*)",
-      "Edit(*.md)",
-      "Edit(**/*.md)"
+      "Bash(*)"
     ],
     "deny": [],
     "ask": []
@@ -268,7 +266,6 @@ The provided `settings.local.json` contains:
 
 This configuration:
 - **Allows all Bash commands** without prompting
-- **Allows editing Markdown files** without prompting
 - Eliminates confirmation dialogs for shell operations
 - Speeds up workflows where you trust Claude's command execution
 
